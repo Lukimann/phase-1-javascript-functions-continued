@@ -10,13 +10,8 @@ function mondayWork(sleeping) {
     return ("This Monday, I will " + activity + ".")
 }
 
-function wrapAdjective() {
-
-    let sign = '||';
-    return function(adjective = "a dedicated programmer") {
-        return `You are ${sign}${adjective}${sign}!`;
-
+let wrapAdjective = function(sign="||") {
+    return function(adjective="a programmer") {
+        return`You are ${sign}${adjective}${sign}!`;
     }
-    
-
 }
